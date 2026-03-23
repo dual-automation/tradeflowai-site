@@ -8,12 +8,6 @@
   <link rel="icon" type="image/png" href="./favicon.png">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-  <style>
-  body .aminos-widget *,
-  body [class*="aminos"] * {
-    color: #111 !important;
-  }
-</style>
 <body class="bg-black text-white">
 
 <header class="w-full border-b border-white/10">
@@ -111,6 +105,12 @@
 
 <script src="https://server.fillout.com/embed/v1/"></script>
 <script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="58729"></script>
-
+<style>
+  body [class*="aminos"] *,
+  body iframe *,
+  body .aminos-widget * {
+    color: #111 !important;
+  }
+</style>
 </body>
 </html>
