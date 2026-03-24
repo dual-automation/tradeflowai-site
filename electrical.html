@@ -4,123 +4,163 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TradeFlow Electrical AI™</title>
-  <meta name="description" content="Plan review and bid support for electrical projects." />
+  <meta name="description" content="Done-for-you plan review and bid support for electrical projects." />
   <link rel="icon" type="image/png" href="./favicon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-black text-white">
 
-<!-- HEADER -->
-<header class="w-full border-b border-white/10">
-  <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
+  <!-- HEADER -->
+  <header class="w-full border-b border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
+      <a href="index.html">
+        <img src="logo.png" alt="TradeFlow AI Systems" class="h-10 w-auto" />
+      </a>
 
-    <a href="index.html">
-      <img src="logo.png" class="h-10">
-    </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="index.html#about" class="hover:text-[#88D856]">About</a>
+        <a href="index.html#tradeflow" class="hover:text-[#88D856]">TradeFlow</a>
+        <a href="foundation.html" class="hover:text-[#88D856]">Foundation AI</a>
+        <a href="electrical.html" class="text-[#0097B2]">Electrical AI</a>
+        <a href="index.html#contact" class="hover:text-[#88D856]">Contact</a>
+      </nav>
 
-    <!-- DESKTOP NAV -->
-    <nav class="hidden md:flex gap-6 text-sm">
+      <button id="menu-btn" class="md:hidden text-white text-2xl">☰</button>
+    </div>
+
+    <div id="mobile-menu" class="hidden flex flex-col items-center gap-4 pb-4 text-sm">
       <a href="index.html#about" class="hover:text-[#88D856]">About</a>
       <a href="index.html#tradeflow" class="hover:text-[#88D856]">TradeFlow</a>
       <a href="foundation.html" class="hover:text-[#88D856]">Foundation AI</a>
       <a href="electrical.html" class="text-[#0097B2]">Electrical AI</a>
       <a href="index.html#contact" class="hover:text-[#88D856]">Contact</a>
-    </nav>
+    </div>
+  </header>
 
-    <!-- MOBILE BUTTON -->
-    <button id="menu-btn" class="md:hidden text-white text-2xl">☰</button>
-  </div>
+  <!-- HERO -->
+  <section class="px-6 pt-20 pb-16 text-center">
+    <p class="text-sm text-[#D9D9D9] mb-4">Powered by DualAutomation Technologies</p>
 
-  <!-- MOBILE MENU -->
-  <div id="mobile-menu" class="hidden flex flex-col items-center gap-4 pb-4 text-sm">
-    <a href="index.html#about" class="hover:text-[#88D856]">About</a>
-    <a href="index.html#tradeflow" class="hover:text-[#88D856]">TradeFlow</a>
-    <a href="foundation.html" class="hover:text-[#88D856]">Foundation AI</a>
-    <a href="electrical.html" class="text-[#0097B2]">Electrical AI</a>
-    <a href="index.html#contact" class="hover:text-[#88D856]">Contact</a>
-  </div>
-</header>
+    <h1 class="text-4xl sm:text-6xl font-bold text-[#88D856]">
+      TradeFlow Electrical AI™
+    </h1>
 
-<!-- HERO -->
-<div class="mt-6 max-w-3xl mx-auto text-[#88D856] font-semibold">
-  This is a done-for-you service — not software.
-</div>
+    <p class="mt-4 text-xl text-[#0097B2]">
+      Done-for-you plan review and bid support for electrical projects
+    </p>
 
-<p class="mt-3 max-w-3xl mx-auto text-[#D9D9D9]">
-  You submit your plans, and we handle the review, scope organization, and bid support. No setup, no learning curve.
-</p>
+    <p class="mt-6 max-w-3xl mx-auto text-lg leading-8 text-[#D9D9D9]">
+      Submit your electrical plans for a structured review that helps organize scope,
+      identify missing information, support estimating, and improve proposal preparation.
+    </p>
 
-<!-- INFO BLOCKS -->
-<section class="px-6 pb-8">
-  <div class="mx-auto max-w-5xl grid gap-6 sm:grid-cols-2">
+    <div class="mt-8 max-w-3xl mx-auto rounded-2xl border border-white/10 bg-white/5 px-6 py-5">
+      <p class="text-base sm:text-lg font-semibold text-[#88D856]">
+        This is a done-for-you service — not software.
+      </p>
 
-    <div class="rounded-xl border border-white/10 p-6">
-      <h3 class="text-lg font-semibold text-[#88D856]">What We Review</h3>
-      <p class="mt-2 text-sm text-[#D9D9D9]">
-        Panels, feeders, circuits, lighting, devices, schedules, risers, and electrical notes.
+      <p class="mt-3 text-base leading-7 text-[#D9D9D9]">
+        You submit your plans, and we handle the review, scope organization, and bid support.
+        No setup. No learning curve. Just clearer information to help you price and present the job with confidence.
       </p>
     </div>
+  </section>
 
-    <div class="rounded-xl border border-white/10 p-6">
-      <h3 class="text-lg font-semibold text-[#88D856]">What You Receive</h3>
-      <p class="mt-2 text-sm text-[#D9D9D9]">
-        Scope breakdown, assumptions, risk flags, and proposal-ready support.
-      </p>
-    </div>
+  <div class="h-px w-full bg-gradient-to-r from-transparent via-[#0097B2]/60 to-transparent"></div>
 
-    <div class="rounded-xl border border-white/10 p-6">
-      <h3 class="text-lg font-semibold text-[#88D856]">Best For</h3>
-      <p class="mt-2 text-sm text-[#D9D9D9]">
-        Electrical contractors and estimators needing a cleaner pre-bid review.
-      </p>
-    </div>
+  <!-- INFO BLOCKS -->
+  <section class="px-6 py-16">
+    <div class="mx-auto max-w-5xl grid gap-6 sm:grid-cols-2">
 
-    <div class="rounded-xl border border-white/10 p-6">
-      <h3 class="text-lg font-semibold text-[#88D856]">How It Works</h3>
-      <p class="mt-2 text-sm text-[#D9D9D9]">
-        Upload plans → we review → results delivered by email.
-      </p>
-    </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <h3 class="text-lg font-semibold text-[#88D856]">What We Review</h3>
+        <p class="mt-3 text-sm leading-7 text-[#D9D9D9]">
+          Panels, feeders, circuits, lighting, devices, schedules, risers, equipment connections,
+          and electrical notes shown in the plans.
+        </p>
+      </div>
 
-  </div>
-</section>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <h3 class="text-lg font-semibold text-[#88D856]">What You Receive</h3>
+        <p class="mt-3 text-sm leading-7 text-[#D9D9D9]">
+          Scope breakdown, assumptions, missing information, risk flags, and proposal support
+          that can be used internally during bid preparation.
+        </p>
+      </div>
 
-<!-- FORM -->
-<section class="px-6 py-16 text-center">
-  <h2 class="text-3xl font-bold">Submit Plans for Review</h2>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <h3 class="text-lg font-semibold text-[#88D856]">Best Fit</h3>
+        <p class="mt-3 text-sm leading-7 text-[#D9D9D9]">
+          Electrical contractors, estimators, and builders who need a more organized review
+          process before pricing and proposal development.
+        </p>
+      </div>
 
-  <div class="mt-12 max-w-4xl mx-auto">
-    <div class="rounded-xl border border-[#0097B2] p-1">
-
-      <div style="width:100%;height:500px;"
-        data-fillout-id="nQf9Sbfskhus"
-        data-fillout-embed-type="standard"
-        data-fillout-inherit-parameters
-        data-fillout-dynamic-resize>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <h3 class="text-lg font-semibold text-[#88D856]">How It Works</h3>
+        <p class="mt-3 text-sm leading-7 text-[#D9D9D9]">
+          Upload the key electrical plan pages, answer a few project questions, and we review
+          the information and send structured results by email.
+        </p>
       </div>
 
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="text-center text-sm text-[#D9D9D9] py-6 border-t border-white/10">
-  © 2026 TradeFlow AI Systems™ · Powered by DualAutomation Technologies
-</footer>
+  <div class="h-px w-full bg-gradient-to-r from-transparent via-[#88D856]/40 to-transparent"></div>
 
-<!-- FILLOUT SCRIPT -->
-<script src="https://server.fillout.com/embed/v1/"></script>
+  <!-- FORM SECTION -->
+  <section class="px-6 py-16 text-center">
+    <h2 class="text-3xl font-bold">Submit Plans for Review</h2>
 
-<!-- MOBILE MENU SCRIPT -->
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
+    <p class="mt-4 max-w-2xl mx-auto text-[#D9D9D9] leading-7">
+      Upload 5–10 relevant pages, including electrical plans, panel schedules, risers, notes, and details if available.
+    </p>
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
-<script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="58729"></script>
+    <p class="mt-4 text-[#0097B2]">
+      No software to learn. No setup required. Just submit your plans and we take it from there.
+    </p>
+
+    <div class="mt-12 max-w-4xl mx-auto">
+      <div class="rounded-xl border border-[#0097B2] p-1">
+        <div style="width:100%;height:500px;"
+          data-fillout-id="nQf9Sbfskhus"
+          data-fillout-embed-type="standard"
+          data-fillout-inherit-parameters
+          data-fillout-dynamic-resize>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACK LINK -->
+  <section class="px-6 pb-16 text-center">
+    <a href="index.html" class="inline-block border border-[#0097B2] px-6 py-3 rounded-xl hover:text-[#88D856]">
+      Back to Home
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-sm text-[#D9D9D9] py-6 border-t border-white/10">
+    © 2026 TradeFlow AI Systems™ · Powered by DualAutomation Technologies
+  </footer>
+
+  <!-- FILLOUT -->
+  <script src="https://server.fillout.com/embed/v1/"></script>
+
+  <!-- AMINOS -->
+  <script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="58729"></script>
+
+  <!-- MOBILE MENU -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
 </body>
 </html>
