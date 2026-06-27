@@ -4,184 +4,196 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Foundation AI™ | Dual Automation™</title>
-  <meta name="description" content="Foundation AI™ is the intelligence layer powering Dual Automation™ platforms, including TradeFlow Electrical AI™, PlansAI™, and ProposalBuilder AI™." />
+  <title>TradeFlow Foundation AI™ | TradeFlow™</title>
+  <meta name="description" content="TradeFlow Foundation AI™ provides expert-managed AI plan review, scope organization, and proposal support for concrete and foundation contractors." />
+
   <link rel="icon" type="image/png" href="./favicon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(0,151,178,.18), transparent 32%),
+        radial-gradient(circle at top right, rgba(136,216,86,.10), transparent 28%),
+        #05070b;
+    }
+    .glass {
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .glow { box-shadow: 0 0 60px rgba(0,151,178,.16); }
+  </style>
 </head>
 
-<body class="bg-black text-white">
+<body class="text-white font-sans">
 
-<header class="w-full border-b border-white/10 bg-black/90 sticky top-0 z-50">
-  <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="logo.png" class="h-12 sm:h-14" alt="Dual Automation logo">
+<header class="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
+  <div class="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between">
+    <a href="tradeflow.html" class="text-xl font-bold tracking-tight">
+      <span class="text-[#0097B2]">Trade</span><span class="text-white">Flow</span><span class="text-[#88D856]">™</span>
     </a>
 
-    <nav class="hidden md:flex gap-6 text-sm text-[#D9D9D9]">
-      <a href="index.html" class="hover:text-[#0097B2]">Dual Automation™</a>
-      <a href="electrical.html" class="hover:text-[#0097B2]">TradeFlow Electrical AI™</a>
-      <a href="foundation.html" class="text-[#88D856]">Foundation AI™</a>
-      <a href="electrical-submit.html" class="hover:text-[#0097B2]">PlansAI™</a>
-      <a href="electrical-no-plan-submit.html" class="hover:text-[#0097B2]">ProposalBuilder AI™</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-white/70">
+      <a href="index.html" class="hover:text-white">DualAutomation™</a>
+      <a href="tradeflow.html" class="hover:text-white">TradeFlow™</a>
+      <a href="electrical.html" class="hover:text-white">Electrical</a>
+      <a href="foundation.html" class="hover:text-white">Foundation</a>
     </nav>
 
-    <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-  </div>
-
-  <div id="mobile-menu" class="hidden flex flex-col items-center gap-4 pb-4 text-[#D9D9D9]">
-    <a href="index.html">Dual Automation™</a>
-    <a href="electrical.html">TradeFlow Electrical AI™</a>
-    <a href="foundation.html">Foundation AI™</a>
-    <a href="electrical-submit.html">PlansAI™</a>
-    <a href="electrical-no-plan-submit.html">ProposalBuilder AI™</a>
+    <a href="#start" class="hidden md:inline-flex rounded-full bg-[#88D856] px-5 py-2 text-sm font-semibold text-black hover:opacity-90">
+      Start Review
+    </a>
   </div>
 </header>
 
-<section class="px-6 pt-24 pb-16 text-center bg-gradient-to-b from-[#001018] to-black">
-  <p class="text-sm text-[#88D856] font-semibold mb-4">
-    The Intelligence Layer Behind Dual Automation™
-  </p>
+<main>
 
-  <h1 class="text-4xl sm:text-6xl font-bold max-w-5xl mx-auto leading-tight">
-    Foundation AI™
-    <span class="block text-[#0097B2]">The Engine Behind Our Industry AI Platforms</span>
-  </h1>
+  <section class="min-h-[82vh] flex items-center px-6">
+    <div class="mx-auto max-w-7xl w-full">
+      <div class="max-w-5xl">
+        <p class="mb-6 inline-flex rounded-full border border-[#0097B2]/40 bg-[#0097B2]/10 px-4 py-2 text-sm font-semibold text-[#88D856]">
+          A DualAutomation™ Platform
+        </p>
 
-  <p class="mt-6 max-w-3xl mx-auto text-lg text-[#D9D9D9]">
-    Foundation AI™ powers the structured analysis, documentation, proposal logic, and workflow intelligence behind Dual Automation™ products like TradeFlow Electrical AI™, PlansAI™, and ProposalBuilder AI™.
-  </p>
-</section>
+        <h1 class="text-5xl sm:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight">
+          TradeFlow<br />
+          Foundation AI™
+        </h1>
 
-<div class="h-px w-full bg-gradient-to-r from-transparent via-[#0097B2]/60 to-transparent"></div>
+        <p class="mt-8 max-w-3xl text-lg sm:text-xl leading-8 text-white/65">
+          Expert-managed AI support for concrete and foundation contractors — built to help organize plans, scope, assumptions, risks, and proposal-ready documentation.
+        </p>
 
-<section class="px-6 py-16 text-center">
-  <h2 class="text-3xl font-bold">Built for Repeatable Business Workflows</h2>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a href="foundation-submit.html" class="rounded-full bg-[#88D856] px-7 py-4 text-center font-semibold text-black hover:opacity-90">
+            Start Foundation Review
+          </a>
+          <a href="tradeflow.html" class="rounded-full border border-white/15 px-7 py-4 text-center font-semibold text-white hover:border-[#0097B2]">
+            Back to TradeFlow™
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <p class="mt-6 max-w-3xl mx-auto text-[#D9D9D9]">
-    Foundation AI™ is not a standalone chatbot. It is the underlying intelligence framework used to turn messy business information into structured outputs, repeatable workflows, and professional deliverables.
-  </p>
+  <section class="px-6 py-24 border-t border-white/10">
+    <div class="mx-auto max-w-7xl">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold text-[#0097B2]">Built for Foundation Contractors</p>
+        <h2 class="mt-4 text-4xl sm:text-5xl font-bold tracking-tight">
+          Cleaner pre-bid review. Stronger proposal support.
+        </h2>
+      </div>
 
-  <div class="mt-10 grid sm:grid-cols-3 gap-6 max-w-6xl mx-auto text-left">
-    <div class="border border-white/10 bg-white/5 p-6 rounded-xl">
-      <h4 class="text-[#0097B2] font-semibold">Analyze</h4>
-      <p class="text-sm mt-2 text-[#D9D9D9]">
-        Reviews project inputs, documents, descriptions, scope notes, and supporting details.
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <div class="glass rounded-3xl p-7">
+          <h3 class="text-xl font-bold">Plan Review Support</h3>
+          <p class="mt-4 text-white/60 leading-7">
+            Helps organize foundation drawings, details, notes, dimensions, and scope-related plan information.
+          </p>
+        </div>
+
+        <div class="glass rounded-3xl p-7">
+          <h3 class="text-xl font-bold">Scope Organization</h3>
+          <p class="mt-4 text-white/60 leading-7">
+            Structures scope items, assumptions, missing information, risks, and proposal-ready language.
+          </p>
+        </div>
+
+        <div class="glass rounded-3xl p-7">
+          <h3 class="text-xl font-bold">Expert-Managed AI™</h3>
+          <p class="mt-4 text-white/60 leading-7">
+            Designed as a done-for-you workflow support system — not a DIY estimating dashboard.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-6 py-24 border-t border-white/10">
+    <div class="mx-auto max-w-7xl grid gap-6 md:grid-cols-2">
+      <div class="glass glow rounded-3xl p-8">
+        <p class="text-sm text-[#88D856] font-semibold">What We Review</p>
+        <h3 class="mt-4 text-3xl font-bold">Foundation Project Documents</h3>
+        <p class="mt-4 text-white/65 leading-7">
+          Footings, slabs, stem walls, grade beams, structural details, notes, dimensions, schedules, and related foundation scope shown in the plans.
+        </p>
+      </div>
+
+      <div class="glass rounded-3xl p-8">
+        <p class="text-sm text-[#0097B2] font-semibold">What You Receive</p>
+        <h3 class="mt-4 text-3xl font-bold">Structured Bid Support</h3>
+        <p class="mt-4 text-white/65 leading-7">
+          Scope breakdown, key assumptions, missing information, risk flags, proposal support, and organized review notes for internal bid preparation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-6 py-24 border-t border-white/10">
+    <div class="mx-auto max-w-7xl">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold text-[#88D856]">Why It Matters</p>
+        <h2 class="mt-4 text-4xl sm:text-5xl font-bold tracking-tight">
+          Better information before you price the job.
+        </h2>
+      </div>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <div class="glass rounded-3xl p-7">
+          <h3 class="text-xl font-bold">Less Manual Review</h3>
+          <p class="mt-4 text-white/60 leading-7">
+            Reduces the time spent organizing plan notes and proposal assumptions manually.
+          </p>
+        </div>
+
+        <div class="glass rounded-3xl p-7">
+          <h3 class="text-xl font-bold">Clearer Bid Assumptions</h3>
+          <p class="mt-4 text-white/60 leading-7">
+            Helps identify what is included, what is missing, and what should be clarified before submission.
+          </p>
+        </div>
+
+        <div class="glass rounded-3xl p-7">
+          <h3 class="text-xl font-bold">Contractor Controlled</h3>
+          <p class="mt-4 text-white/60 leading-7">
+            Final pricing, scope decisions, and bid submission remain with the contractor.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="start" class="px-6 py-24 border-t border-white/10">
+    <div class="mx-auto max-w-5xl text-center glass rounded-3xl p-10 sm:p-14">
+      <h2 class="text-4xl sm:text-5xl font-bold tracking-tight">
+        Start a Foundation Review.
+      </h2>
+      <p class="mt-5 text-white/60 max-w-2xl mx-auto leading-7">
+        Submit your project information and supporting plan documents to begin the review process.
       </p>
-    </div>
 
-    <div class="border border-white/10 bg-white/5 p-6 rounded-xl">
-      <h4 class="text-[#0097B2] font-semibold">Structure</h4>
-      <p class="text-sm mt-2 text-[#D9D9D9]">
-        Converts raw information into organized assumptions, risks, summaries, and action-ready documentation.
-      </p>
+      <div class="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="foundation-submit.html" class="rounded-full bg-[#88D856] px-8 py-4 font-semibold text-black hover:opacity-90">
+          Submit Foundation Project
+        </a>
+        <a href="tradeflow.html" class="rounded-full border border-white/15 px-8 py-4 font-semibold text-white hover:border-[#0097B2]">
+          Back to TradeFlow™
+        </a>
+      </div>
     </div>
+  </section>
 
-    <div class="border border-[#88D856] bg-white/5 p-6 rounded-xl">
-      <h4 class="text-[#88D856] font-semibold">Deploy</h4>
-      <p class="text-sm mt-2 text-[#D9D9D9]">
-        Supports expert-managed AI systems that can be trained, refined, and improved over time.
-      </p>
-    </div>
+</main>
+
+<footer class="border-t border-white/10 px-6 py-8">
+  <div class="mx-auto max-w-7xl flex flex-col sm:flex-row justify-between gap-4 text-sm text-white/45">
+    <p>© 2026 TradeFlow Foundation AI™</p>
+    <p>Powered by DualAutomation™</p>
   </div>
-</section>
-
-<section class="px-6 py-16 bg-white/5 border-y border-white/10">
-  <div class="max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl font-bold">What Foundation AI™ Powers</h2>
-
-    <div class="mt-10 grid sm:grid-cols-2 gap-6 text-left">
-      <div class="rounded-2xl border border-[#0097B2] bg-black/40 p-6">
-        <h3 class="text-xl font-semibold text-[#0097B2]">PlansAI™</h3>
-        <p class="mt-3 text-sm text-[#D9D9D9]">
-          Plan-based bid intelligence, document intake, proposal support, assumptions, internal pro formas, and field execution notes.
-        </p>
-      </div>
-
-      <div class="rounded-2xl border border-[#88D856] bg-black/40 p-6">
-        <h3 class="text-xl font-semibold text-[#88D856]">ProposalBuilder AI™</h3>
-        <p class="mt-3 text-sm text-[#D9D9D9]">
-          Proposal generation from service call details, project descriptions, remodel notes, or rough field information.
-        </p>
-      </div>
-
-      <div class="rounded-2xl border border-white/10 bg-black/40 p-6">
-        <h3 class="text-xl font-semibold text-white">TradeFlow Electrical AI™</h3>
-        <p class="mt-3 text-sm text-[#D9D9D9]">
-          The electrical contractor platform that connects plan-based workflows and description-based proposal workflows.
-        </p>
-      </div>
-
-      <div class="rounded-2xl border border-white/10 bg-black/40 p-6">
-        <h3 class="text-xl font-semibold text-white">Future Industry Systems</h3>
-        <p class="mt-3 text-sm text-[#D9D9D9]">
-          The same framework can support future platforms for plumbing, HVAC, solar, real estate, and additional industry verticals.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="px-6 py-16">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center">Why It Matters</h2>
-
-    <div class="mt-10 grid sm:grid-cols-3 gap-6">
-      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-        <h3 class="text-lg font-semibold text-[#88D856]">Less Manual Admin</h3>
-        <p class="mt-3 text-sm text-[#D9D9D9]">
-          Helps reduce repetitive documentation work and improves consistency.
-        </p>
-      </div>
-
-      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-        <h3 class="text-lg font-semibold text-[#88D856]">Better Outputs</h3>
-        <p class="mt-3 text-sm text-[#D9D9D9]">
-          Creates cleaner summaries, proposals, and internal documents.
-        </p>
-      </div>
-
-      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-        <h3 class="text-lg font-semibold text-[#88D856]">Smarter Over Time</h3>
-        <p class="mt-3 text-sm text-[#D9D9D9]">
-          Supports managed AI systems that can be updated and retrained based on real workflow use.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="px-6 py-16 text-center">
-  <div class="max-w-4xl mx-auto border border-white/10 bg-white/5 rounded-2xl p-8">
-    <h2 class="text-3xl font-bold">Explore the First Platform</h2>
-    <p class="mt-4 text-[#D9D9D9]">
-      Foundation AI™ currently powers TradeFlow Electrical AI™, built for electrical contractors who need faster, cleaner bid and proposal workflows.
-    </p>
-
-    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="electrical.html" class="bg-[#88D856] text-black px-7 py-3 rounded-xl font-semibold">
-        View TradeFlow Electrical AI™
-      </a>
-      <a href="index.html" class="border border-[#0097B2] px-7 py-3 rounded-xl font-semibold">
-        Back to Dual Automation™
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer class="text-center text-sm text-[#D9D9D9] py-6 border-t border-white/10">
-  © 2026 Dual Automation™. Foundation AI™, TradeFlow Electrical AI™, PlansAI™, and ProposalBuilder AI™ are brand identifiers of Dual Automation.
 </footer>
-
-<script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="58729"></script>
-
-<script>
-const btn = document.getElementById('menu-btn');
-const menu = document.getElementById('mobile-menu');
-btn.addEventListener('click', () => {
-  menu.classList.toggle('hidden');
-});
-</script>
 
 </body>
 </html>
